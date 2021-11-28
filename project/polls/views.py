@@ -19,9 +19,7 @@ def results(request, question_id):
     return HttpResponse(response % question_id)
 
 
-def blog_hendler(request):
-    contex = {}
-    return render(request, 'news/blog.html', contex)
+
 
 
 def vote(request, question_id):
